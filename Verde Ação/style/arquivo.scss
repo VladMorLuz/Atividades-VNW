@@ -1,0 +1,224 @@
+
+$cor-primaria: #3A7A28;  
+$cor-primaria-escura: #2a5a1d;
+$cor-fundo-header: #FFFFFF;
+$cor-fundo-form: #EBF5E9;
+$cor-fundo-pagina: #F8FBF7;
+$cor-texto: #333333;    
+$cor-texto-claro: #FFFFFF;
+$cor-borda-card: #DDDDDD;
+
+$fonte-principal: Arial, Helvetica, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: $fonte-principal;
+    background-color: $cor-fundo-pagina;
+    color: $cor-texto;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: $cor-primaria;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 0;
+}
+
+
+.btn-principal {
+    display: inline-block;
+    background-color: $cor-primaria;
+    color: $cor-texto-claro;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 20px;
+
+    &:hover {
+        background-color: $cor-primaria-escura;
+    }
+}
+
+.btn-secundario {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: $cor-primaria;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid $cor-primaria;
+    margin-top: 15px;
+
+    &:hover {
+        background-color: $cor-fundo-form;
+    }
+}
+
+
+.site-header {
+    background-color: $cor-fundo-header;
+    padding: 20px 0;
+    border-bottom: 1px solid #EEE;
+
+    .container {
+        font-size: 0;
+    }
+
+    .logo {
+        display: inline-block;
+        width: 50%;
+        font-size: 24px;
+        font-weight: bold;
+        color: $cor-primaria;
+        vertical-align: middle;
+    }
+
+    .menu-principal {
+        display: inline-block;
+        width: 50%; 
+        font-size: 16px;
+        text-align: right; 
+        vertical-align: middle;
+
+        a {
+            display: inline-block;
+            margin-left: 20px; 
+            font-weight: bold;
+        }
+    }
+}
+
+
+.hero {
+    background-image: url('../assets/0.png');
+    background-size: cover;
+    background-position: center center;
+    
+    padding: 120px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 48px;
+        color: $cor-texto-claro;
+    }
+
+    p {
+        font-size: 18px;
+        color: $cor-texto-claro;
+        margin-top: 10px;
+    }
+}
+
+
+.activities-section {
+    .container {
+        text-align: center;
+    }
+
+    .cards-container {
+        font-size: 0;
+    }
+
+    .card {
+        display: inline-block;
+        width: 23%;
+        margin: 1%;
+        background-color: #FFFFFF;
+        border: 1px solid $cor-borda-card;
+        border-radius: 8px;
+        font-size: 16px;
+        text-align: left;
+        vertical-align: top; 
+
+        img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .card-content {
+            padding: 20px;
+            
+            h3 {
+                color: $cor-primaria;
+            }
+        }
+    }
+}
+
+
+.signup-section {
+    background-color: $cor-fundo-form;
+    text-align: center;
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        max-width: 600px;
+        margin: 0 auto 30px auto;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: left; 
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            display: block; 
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #CCC;
+            border-radius: 4px;
+        }
+        
+        button[type="submit"] {
+            @extend .btn-principal;
+            width: 100%;
+            margin-top: 30px;
+            border: none; 
+            cursor: pointer;
+        }
+    }
+}
+
+.site-footer {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+    color: #888;
+    background-color: #FFF;
+    border-top: 1px solid #EEE;
+}

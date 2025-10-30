@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F8FBF7;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #3A7A28;
+}
+
+h2, h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 0;
+}
+
+/* === COMPONENTES REUTILIZÁVEIS (Botões) === */
+.btn-principal, .signup-section form button[type=submit] {
+  display: inline-block;
+  background-color: #3A7A28;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.btn-principal:hover, .signup-section form button[type=submit]:hover {
+  background-color: #2a5a1d;
+}
+
+.btn-secundario {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #3A7A28;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 1px solid #3A7A28;
+  margin-top: 15px;
+}
+.btn-secundario:hover {
+  background-color: #EBF5E9;
+}
+
+.site-header {
+  background-color: #FFFFFF;
+  padding: 20px 0;
+  border-bottom: 1px solid #EEE;
+}
+.site-header .container {
+  font-size: 0;
+}
+.site-header .logo {
+  display: inline-block;
+  width: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3A7A28;
+  vertical-align: middle;
+}
+.site-header .menu-principal {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-align: right;
+  vertical-align: middle;
+}
+.site-header .menu-principal a {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url("../assets/0.png");
+  background-size: cover;
+  background-position: center center;
+  padding: 120px 0;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 48px;
+  color: #FFFFFF;
+}
+.hero p {
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.activities-section .container {
+  text-align: center;
+}
+.activities-section .cards-container {
+  font-size: 0;
+}
+.activities-section .card {
+  display: inline-block;
+  width: 23%;
+  margin: 1%;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: left;
+  vertical-align: top;
+}
+.activities-section .card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.activities-section .card .card-content {
+  padding: 20px;
+}
+.activities-section .card .card-content h3 {
+  color: #3A7A28;
+}
+
+.signup-section {
+  background-color: #EBF5E9;
+  text-align: center;
+}
+.signup-section h2 {
+  font-size: 32px;
+}
+.signup-section p {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+.signup-section form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+.signup-section form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.signup-section form input[type=text],
+.signup-section form input[type=email] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+.signup-section form button[type=submit] {
+  width: 100%;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* === RODAPÉ === */
+.site-footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 14px;
+  color: #888;
+  background-color: #FFF;
+  border-top: 1px solid #EEE;
+}
