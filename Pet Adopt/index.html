@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adopt - Encontre seu novo amigo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="Logo Pet Adopt">
+            </div>
+            <nav>
+                <a href="#form" class="btn-primary">Adotar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="pet-showcase">
+            <div class="container">
+                <div class="pet-info">
+                    <h1 id="pet-name">Scooby</h1>
+                    <p id="pet-description">
+                        Scooby é um cão leal e protetor. Ama crianças e é muito obediente. 
+                        Precisa de espaço para correr e brincar. Ideal para famílias ativas.
+                    </p>
+                </div>
+
+                <div class="pet-image-container">
+                    <img id="pet-img" src="./assets/scooby.png" alt="Foto do Scooby">
+                </div>
+            </div>
+        </section>
+
+        <section class="thumbnails">
+            <div class="container">
+                <button class="thumb active" onclick="changePet(0)">
+                    <img src="./assets/scooby-thumb.png" alt="Scooby">
+                </button>
+                <button class="thumb" onclick="changePet(1)">
+                    <img src="./assets/pantera-thumb.png" alt="Pantera">
+                </button>
+                <button class="thumb" onclick="changePet(2)">
+                    <img src="./assets/thor-thumb.png" alt="Thor">
+                </button>
+                <button class="thumb" onclick="changePet(3)">
+                    <img src="./assets/garfield-thumb.png" alt="Garfield">
+                </button>
+            </div>
+        </section>
+
+        <section class="adoption-form" id="form">
+            <div class="container">
+                <div class="form-header">
+                    <h2>Pronto para transformar uma vida?</h2>
+                    <p>Junte-se a centenas de famílias que já encontraram seus melhores amigos através do PetAdopt.</p>
+                </div>
+
+                <form>
+                    <div class="input-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+
+                    <div class="input-group radio-group">
+                        <label>Animal escolhido:</label>
+                        <div class="options">
+                            <input type="radio" name="animal-type" id="dog" value="cachorro"> <label for="dog">Cachorro</label>
+                            <input type="radio" name="animal-type" id="cat" value="gato"> <label for="cat">Gato</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pet-choice">Nome do Animal:</label>
+                        <input type="text" id="pet-choice" placeholder="Qual pet você quer adotar?">
+                    </div>
+
+                    <button type="submit" class="btn-submit">Comece Sua Jornada</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <img src="./assets/logo.png" alt="Logo Pet Adopt">
+            <p>© 2024 PetAdopt. Todos os direitos reservados.</p>
+            <div class="socials">
+                <span>F</span> <span>I</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

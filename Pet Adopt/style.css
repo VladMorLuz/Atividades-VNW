@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #4A4A4A;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #2D3047;
+  padding: 15px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo img {
+  height: 40px;
+}
+header .btn-primary {
+  background-color: #F2A900;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: filter 0.3s;
+}
+header .btn-primary:hover {
+  filter: brightness(0.9);
+}
+
+.pet-showcase {
+  background-color: #FFFFFF;
+  padding: 60px 0 40px;
+}
+.pet-showcase .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+@media (max-width: 768px) {
+  .pet-showcase .container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+.pet-showcase .pet-info {
+  flex: 1;
+}
+.pet-showcase .pet-info h1 {
+  font-size: 3.5rem;
+  color: #F2A900;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.pet-showcase .pet-info p {
+  font-size: 1.1rem;
+  color: #4A4A4A;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.pet-showcase .pet-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2D3047;
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 300px;
+}
+.pet-showcase .pet-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.thumbnails {
+  background-color: #FFFFFF;
+  padding-bottom: 60px;
+}
+.thumbnails .container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.thumbnails .thumb {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: none;
+}
+.thumbnails .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.thumbnails .thumb:hover, .thumbnails .thumb.active {
+  border-color: #F2A900;
+  transform: scale(1.1);
+}
+
+.adoption-form {
+  background-color: #F2A900;
+  padding: 60px 0;
+  color: #FFFFFF;
+}
+.adoption-form .form-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.adoption-form .form-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.adoption-form .form-header p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.adoption-form form {
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.adoption-form form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+.adoption-form form input[type=text],
+.adoption-form form input[type=tel],
+.adoption-form form input[type=email] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #4A4A4A;
+}
+.adoption-form form input[type=text]::-moz-placeholder, .adoption-form form input[type=tel]::-moz-placeholder, .adoption-form form input[type=email]::-moz-placeholder {
+  color: #ccc;
+}
+.adoption-form form input[type=text]::placeholder,
+.adoption-form form input[type=tel]::placeholder,
+.adoption-form form input[type=email]::placeholder {
+  color: #ccc;
+}
+.adoption-form form .radio-group .options {
+  display: flex;
+  gap: 20px;
+}
+.adoption-form form .radio-group .options input {
+  margin-right: 5px;
+}
+.adoption-form form .btn-submit {
+  background-color: #2D3047;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+.adoption-form form .btn-submit:hover {
+  background-color: rgb(64.7844827586, 69.1034482759, 102.2155172414);
+}
+
+footer {
+  background-color: rgb(35.1077586207, 37.4482758621, 55.3922413793);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+footer .container img {
+  height: 40px;
+}/*# sourceMappingURL=style.css.map */
